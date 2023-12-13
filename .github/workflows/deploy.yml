@@ -28,5 +28,5 @@ jobs:
       - name: Run Bot
         run: python xipay.py
         env:
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-          DISCORD_BOT_ID_ROOM: ${{ secrets.DISCORD_BOT_ID_ROOM }}
+          DISCORD_BOT_TOKEN: ${{ config.DISCORD_BOT_TOKEN }}
+          DISCORD_BOT_ID_ROOM: ${{ config.DISCORD_BOT_ID_ROOM }}

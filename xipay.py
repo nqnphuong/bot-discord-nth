@@ -2,7 +2,7 @@ import discord
 from discord.ext import tasks, commands
 import datetime
 import random
-import config
+# import config
 
 intents = discord.Intents.default()
 intents.presences = True
