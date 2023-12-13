@@ -3,6 +3,9 @@ from discord.ext import tasks, commands
 import datetime
 import random
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 intents = discord.Intents.default()
 intents.presences = True
 intents.messages = True
@@ -45,7 +48,7 @@ day_mapping = {
 }
 
 # ID của kênh để gửi thông báo
-announcement_channel_id = os.getenv('DISCORD_BOT_ID_ROOM')  # Thay thế bằng ID của kênh bạn muốn sử dụng
+announcement_channel_id = 1010150474101555275
 
 weekly_count = 1
 
@@ -74,6 +77,7 @@ async def set_activity_based_on_day():
         activity_message = "\n".join(activities)
         print(f'**Hoạt động ngày {weekday_vn}:**\n```{activity_message}```\nMỗi ngày vài câu::kissing_smiling_eyes:\n> {random.choice(quote_mapping)}')
     else:
+        activity_message = 'Không có hoạt động nào được lên lịch cho ngày hôm nay.'
         print('Không có hoạt động nào được lên lịch cho ngày hôm nay.')
     
     # Gửi thông báo đến kênh đã chọn
