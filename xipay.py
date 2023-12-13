@@ -2,6 +2,7 @@ import discord
 from discord.ext import tasks, commands
 import datetime
 import random
+import os
 intents = discord.Intents.default()
 intents.presences = True
 intents.messages = True
@@ -44,7 +45,7 @@ day_mapping = {
 }
 
 # ID của kênh để gửi thông báo
-announcement_channel_id = secrets.DISCORD_BOT_ID_ROOM  # Thay thế bằng ID của kênh bạn muốn sử dụng
+announcement_channel_id = os.getenv('DISCORD_BOT_ID_ROOM')  # Thay thế bằng ID của kênh bạn muốn sử dụng
 
 weekly_count = 1
 
@@ -92,4 +93,4 @@ def get_activities_for_day(weekday):
     return activities
 
 # Đăng nhập bằng token
-client.run(secrets.DISCORD_BOT_TOKEN)
+client.run(os.getenv('DISCORD_BOT_TOKEN'))  # Thay thế bằng token của bạn
