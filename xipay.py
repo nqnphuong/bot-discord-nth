@@ -48,7 +48,7 @@ day_mapping = {
 }
 
 # ID của kênh để gửi thông báo
-announcement_channel_id = 1010150474101555275
+announcement_channel_id = 1164461560744398880
 
 weekly_count = 1
 
