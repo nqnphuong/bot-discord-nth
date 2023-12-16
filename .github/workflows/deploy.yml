@@ -1,0 +1,36 @@
+@@ -1,32 +0,0 @@
+# .github/workflows/deploy.yml
+
+name: Deploy Bot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Bot
+        run: python src/main.py
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_ROOM_ID: ${{ secrets.DISCORD_ROOM_ID }}
+          DIRECTORY_CALENDAR = 'assets/calendar.json'
+          DIRECTORY_QUOTE = 'assets/quote.json'
+          DIRECTORY_REPLY = 'assets/reply.json'
