@@ -31,6 +31,6 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_ROOM_ID: ${{ secrets.DISCORD_ROOM_ID }}
-          DIRECTORY_CALENDAR = 'assets/calendar.json'
-          DIRECTORY_QUOTE = 'assets/quote.json'
-          DIRECTORY_REPLY = 'assets/reply.json'
+          DIRECTORY_CALENDAR: 'assets/calendar.json'
+          DIRECTORY_QUOTE: 'assets/quote.json'
+          DIRECTORY_REPLY: 'assets/reply.json'
