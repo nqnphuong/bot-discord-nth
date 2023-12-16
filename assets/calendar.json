@@ -1,0 +1,33 @@
+{
+  "odd": {
+    "calendar": [
+      {
+        "day": "Saturday",
+        "day_vn": "Thứ 7",
+        "todo": [
+          "14:20: Test notification 1", 
+          "14:30: Test notification 2"
+        ]
+      }
+    ]
+  },
+  "even": {
+    "calendar": [
+      {
+        "day": "Saturday",
+        "day_vn": "Thứ 7",
+        "todo": [
+          "19:00: Bang chiến trận 1 ",
+          "19:30: Bang chiến trận 2"
+        ]
+      },
+      {
+        "day": "Sunday",
+        "day_vn": "Chủ nhật",
+        "todo": [
+          "20:00: Bang hoa"
+        ]
+      }
+    ]
+  }
+}

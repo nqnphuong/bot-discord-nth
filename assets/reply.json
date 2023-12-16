@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Link tải game Nghịch Thuỷ Hàn mobile",
+    "bot_call": "link",
+    "reply": [
+      "**Link tải game Nghịch Thuỷ Hàn mobile**: https://h.163.com/"
+    ]
+  },
+  {
+    "title": "Tên tiếng Trung các môn phái",
+    "bot_call": "monphai",
+    "reply": [
+      "**Đây là tên tiếng Trung các môn phái trong game Nghịch Thuỷ Hàn mobile**",
+      "```碎梦 Toái Mộng",
+      "血河 Huyết Hà",
+      "素问 Tố Vấn",
+      "神相 Thần Tương",
+      "九灵 Cửu Linh",
+      "铁衣 Thiết Y",
+      "龙吟 Long Ngâm",
+      "玄机 Huyền Cơ```"
+    ]
+  },
+  {
+    "title": "Uyên là ai ?",
+    "bot_call": "uyen",
+    "reply": [
+      "**Uyên là ai ?**",
+      "Uyên là Ngư"
+    ]
+  }
+]
