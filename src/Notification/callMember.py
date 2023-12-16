@@ -23,10 +23,10 @@ class CallMember:
                 
                 if time_obj > datetime.datetime.now(): # tìm hd gần nhất
                     time_difference = time_obj - datetime.datetime.now()
-                    if closest_time_difference is None or time_notification <= datetime.datetime.now(): 
+                    if time_notification <= datetime.datetime.now(): 
                         closest_time_difference = time_difference 
                         closest_event = activity_str
-                    break
+                        break
 
             if closest_event:
                 minutes_until_event = closest_time_difference.seconds // 60
@@ -44,5 +44,5 @@ class CallMember:
     
 
     def send_notification(self, minutes_until_event, activity):
-        return f'<@{512116966320766976}> ơi! Còn {minutes_until_event} phút nữa là bắt đầu **{activity}**. Ai không đi xứng đáng bị trĩ c4'
+        return f'@here ơi! Còn {minutes_until_event} phút nữa là bắt đầu **{activity}**. Ai không đi xứng đáng bị trĩ c4 <:shyshy:1164491726992457829><:shyshy:1164491726992457829><:shyshy:1164491726992457829>'
 
