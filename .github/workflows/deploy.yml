@@ -27,7 +27,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Bot
-        run: python src/main.py
+        run: python ${{ github.workspace }}/src/main.py
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_ROOM_ID: ${{ secrets.DISCORD_ROOM_ID }}
